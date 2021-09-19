@@ -69,7 +69,7 @@ app.get("*", (req, res) => {
 });
 
 // Setup port number
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log("Server is up on port " + port);
